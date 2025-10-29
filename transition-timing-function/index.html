@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Container & Spacing</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-2"
+  >
+    <section
+      class="flex flex-col gap-3 text-black text-center border-[3px] border-dashed border-orange-300 px-3 h-auto w-[520px] overflow-y-auto p-1 mb-t"
+    >
+      <div class="border p-2 shadow-2xl mb-3">
+        <h1 class="text-2xl">ease-linear</h1>
+        <p>
+          🧠 Meaning: Constant speed — no acceleration or deceleration.It will
+          move smoothly and evenly — like a robot arm: same speed from start to
+          end.
+        </p>
+        <div
+          class="w-12 h-12 bg-blue-500 transition-all duration-700 ease-linear hover:w-48"
+        ></div>
+      </div>
+
+      <div class="border p-2 shadow-2xl mb-3">
+        <h1 class="text-2xl">ease-in</h1>
+        <p>
+          🧠 Meaning: Starts slow, ends fast. Think: a car accelerating from
+          rest.It ramps up speed, giving a feeling of a “slow start” → “fast
+          end”.
+        </p>
+        <div
+          class="w-12 h-12 bg-green-500 transition-all duration-700 ease-in hover:w-48"
+        ></div>
+      </div>
+
+      <div class="border p-2 shadow-2xl mb-3">
+        <h1 class="text-2xl">ease-out</h1>
+        <p>
+          🧠 Meaning: Starts fast, ends slow. Think: a car slowing down to
+          park.It starts quickly, then smoothly slows down before stopping.
+        </p>
+        <div
+          class="w-12 h-12 bg-red-500 transition-all duration-700 ease-out hover:w-48"
+        ></div>
+      </div>
+
+      <div class="border p-2 shadow-2xl mb-3">
+        <h1 class="text-2xl">ease-in-out</h1>
+        <p>
+          🧠 Meaning: Slow start → Fast middle → Slow end. Smoothest and most
+          natural feel.It accelerates and then decelerates, great for natural UI
+          transitions.
+        </p>
+        <div
+          class="w-12 h-12 bg-purple-500 transition-all duration-700 ease-in-out hover:w-48"
+        ></div>
+      </div>
+
+      <div class="border p-2 shadow-2xl mb-3">
+        <h1 class="text-2xl">ease-initial</h1>
+        <p>
+          🧠 Meaning: Resets the easing to the browser’s default value
+          (ease).Acts like a reset — usually same as ease-in-out on most
+          browsers unless overridden.
+        </p>
+        <div
+          class="w-12 h-12 bg-yellow-500 transition-all duration-700 ease-initial hover:w-48"
+        ></div>
+      </div>
+
+      <div class="border p-2 shadow-2xl mb-3">
+        <h1 class="text-2xl">Custom easing</h1>
+        <p>
+          🧠 Meaning: You can use a custom cubic-bezier curve to fine-tune
+          acceleration.This specific curve makes it start super fast and end
+          abruptly — like a “snap” motion. You can tweak the numbers to change
+          the “feel” of the motion.
+        </p>
+        <div
+          class="w-12 h-12 bg-pink-500 transition-all duration-700 ease-[cubic-bezier(0.95,0.05,0.795,0.035)] hover:w-48"
+        ></div>
+      </div>
+    </section>
+  </body>
+</html>
